@@ -20,14 +20,39 @@
     </header>
     <main class="container">
       <section class="filter">
+        <form action="#" class="infrastructur" method="post">
         <div class="filter-item">
-          <p class="option">Инфраструктура:</p>
+          <fieldset>
+            <p class="option">Инфаструктура:</p>
+            <ul class="option-filter">
+              <li class="option-filter-item">
+                <label class="filter-label">
+                  <input class="filter-input" type="checkbox" name="component" checked>
+                  <span class="filter-text">Бассейн</span>
+                </label>
+              </li>
+              <li class="option-filter-item">
+                <label class="filter-label">
+                  <input class="filter-input" type="checkbox" name="component">
+                  <span class="filter-text">Парковка</span>
+                </label>
+              </li>
+              <li class="option-filter-item">
+                <label class="filter-label">
+                  <input class="filter-input" type="checkbox" name="component">
+                  <span class="filter-text">Wi-Fi</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
         <div class="filter-item">
           <p class="option">Тип жилья:</p>
         </div>
         <div class="filter-item">
-          <p class="option">Стоимость в сутки(Р):</p>
+          <p class="option">Стоимость в сутки (Р):</p>
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
         </div>
       </section>
       <div class="found">
