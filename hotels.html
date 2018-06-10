@@ -80,19 +80,13 @@
       </form>
       </section>
       <div class="found">
-        <form action="#" class="found-list">
-          <fieldset>
-            <label class="found-label" for="quantity">Найдено:</label>
-            <input class="found-input" id="quantity" name="quantity" type="number" value="3" disabled>
-            <span class="found-item">Сортировка:</span>
-            <input class="price-input" id="price" type="radio" name="sorting-type" checked>
-            <label class="price-label" for="price">По цене</label>
-            <input class="type-input" id="type" type="radio" name="sorting-type">
-            <label class="type-label" for="type">По типу</label>
-            <input class="rating-input" id="rating" type="radio" name="sorting-type">
-            <label class="rating-label" for="rating">По рейтингу</label>
-          </fieldset>
-        </form>
+        <p class="found-item">Найдено: <span>3</span></p>
+        <p class="sorting">Сортировка:</p>
+        <ul class="sorting-list">
+          <li class="sorting-item active"><a href="#">По цене</a></li>
+          <li class="sorting-item"><a href="#">По типу</a></li>
+          <li class="sorting-item"><a href="#">По рейтингу</a></li>
+        </ul>
       </div>
       <section class="results">
         <ul class="results-list">
@@ -102,6 +96,7 @@
             <p class="type">Гостиница <span class="price">от 4000 Р.</span></p>
             <a href="#" class="more-info">Подробнее</a>
             <a href="#" class="booking">Забронировать</a>
+            <p class="sorting-text">Рейтинг:8,5</p>
           </li>
           <li class="results-item">
             <img src="img/desert.jpg" alt="Desert Quail Inn">
@@ -109,6 +104,7 @@
             <p class="type">Мотель <span class="price">от 3000 Р.</span></p>
             <a href="#" class="more-info">Подробнее</a>
             <a href="#" class="booking">Забронировать</a>
+            <p class="sorting-text">Рейтинг:8,9</p>
           </li>
           <li class="results-item">
             <img src="img/villas.jpg" alt="Villas At Poco Diablo">
@@ -116,6 +112,7 @@
             <p class="type">Апартаменты <span class="price">от 2000 Р.</span></p>
             <a href="#" class="more-info">Подробнее</a>
             <a href="#" class="booking">Забронировать</a>
+            <p class="sorting-text">Рейтинг:9,2</p>
           </li>
         </ul>
       </section>
