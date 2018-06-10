@@ -20,43 +20,79 @@
     </header>
     <main class="container">
       <section class="filter">
-        <form action="#" class="infrastructur" method="post">
-        <div class="filter-item">
-          <fieldset>
-            <p class="option">Инфаструктура:</p>
-            <ul class="option-filter">
-              <li class="option-filter-item">
-                <label class="filter-label">
-                  <input class="filter-input" type="checkbox" name="component" checked>
-                  <span class="filter-text">Бассейн</span>
-                </label>
-              </li>
-              <li class="option-filter-item">
-                <label class="filter-label">
-                  <input class="filter-input" type="checkbox" name="component">
-                  <span class="filter-text">Парковка</span>
-                </label>
-              </li>
-              <li class="option-filter-item">
-                <label class="filter-label">
-                  <input class="filter-input" type="checkbox" name="component">
-                  <span class="filter-text">Wi-Fi</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="filter-item">
-          <p class="option">Тип жилья:</p>
-        </div>
+        <form action="#" class="infrastructure" method="post">
+          <div class="filter-item">
+            <fieldset>
+              <p class="option">Инфаструктура:</p>
+              <ul class="option-filter">
+                <li class="option-filter-item">
+                  <label class="filter-label">
+                    <input class="filter-input" type="checkbox" name="component-1" checked>
+                    <span class="filter-text">Бассейн</span>
+                  </label>
+                </li>
+                <li class="option-filter-item">
+                  <label class="filter-label">
+                    <input class="filter-input" type="checkbox" name="component-2">
+                    <span class="filter-text">Парковка</span>
+                  </label>
+                </li>
+                <li class="option-filter-item">
+                  <label class="filter-label">
+                    <input class="filter-input" type="checkbox" name="component-3">
+                    <span class="filter-text">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-item">
+            <fieldset>
+              <p class="option">Тип жилья:</p>
+              <ul class="option-filter">
+                <li class="option-filter-item">
+                  <label class="filter-label">
+                    <input class="filter-input" type="checkbox" name="component-4" checked>
+                    <span class="filter-text">Гостиница</span>
+                  </label>
+                </li>
+                <li class="option-filter-item">
+                  <label class="filter-label">
+                    <input class="filter-input" type="checkbox" name="component-5" checked>
+                    <span class="filter-text">Мотель</span>
+                  </label>
+                </li>
+                <li class="option-filter-item">
+                  <label class="filter-label">
+                    <input class="filter-input" type="checkbox" name="component-6" checked>
+                    <span class="filter-text">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         <div class="filter-item">
           <p class="option">Стоимость в сутки (Р):</p>
           <label class="min-price">от <input type="text" name="min-price" value="0"></label>
           <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
         </div>
+        <button class="button-show" type="submit">Показать</button>
+      </form>
       </section>
       <div class="found">
-        <p class="found-item">Найдено: 3</p>
+        <form action="#" class="found-list">
+          <fieldset>
+            <label class="found-label" for="quantity">Найдено:</label>
+            <input class="found-input" id="quantity" name="quantity" type="number" value="3" disabled>
+            <span class="found-item">Сортировка:</span>
+            <input class="price-input" id="price" type="radio" name="sorting-type" checked>
+            <label class="price-label" for="price">По цене</label>
+            <input class="type-input" id="type" type="radio" name="sorting-type">
+            <label class="type-label" for="type">По типу</label>
+            <input class="rating-input" id="rating" type="radio" name="sorting-type">
+            <label class="rating-label" for="rating">По рейтингу</label>
+          </fieldset>
+        </form>
       </div>
       <section class="results">
         <ul class="results-list">
@@ -64,16 +100,22 @@
             <img src="img/amara.jpg" alt="Amara Resort & SPA">
             <h2 class="hotel-name">Amara Resort & SPA</h2>
             <p class="type">Гостиница <span class="price">от 4000 Р.</span></p>
+            <a href="#" class="more-info">Подробнее</a>
+            <a href="#" class="booking">Забронировать</a>
           </li>
           <li class="results-item">
             <img src="img/desert.jpg" alt="Desert Quail Inn">
             <h2 class="hotel-name">Desert Quail Inn</h2>
             <p class="type">Мотель <span class="price">от 3000 Р.</span></p>
+            <a href="#" class="more-info">Подробнее</a>
+            <a href="#" class="booking">Забронировать</a>
           </li>
           <li class="results-item">
             <img src="img/villas.jpg" alt="Villas At Poco Diablo">
             <h2 class="hotel-name">Villas At Poco Diablo</h2>
             <p class="type">Апартаменты <span class="price">от 2000 Р.</span></p>
+            <a href="#" class="more-info">Подробнее</a>
+            <a href="#" class="booking">Забронировать</a>
           </li>
         </ul>
       </section>
