@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -73,8 +76,8 @@
           </div>
         <div class="filter-item">
           <p class="option">Стоимость в сутки (Р):</p>
-          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          <label class="min-price">от <input class="trans" type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input class="trans" type="text" name="max-price" value="3000"></label>
         </div>
         <button class="button-show" type="submit">Показать</button>
       </form>
@@ -92,27 +95,27 @@
         <ul class="results-list">
           <li class="results-item">
             <img src="img/amara.jpg" alt="Amara Resort & SPA">
-            <h2 class="hotel-name">Amara Resort & SPA</h2>
+            <a href="#" class="hotel-name">Amara Resort & SPA</a>
             <p class="type">Гостиница <span class="price">от 4000 Р.</span></p>
             <a href="#" class="more-info">Подробнее</a>
             <a href="#" class="booking">Забронировать</a>
-            <p class="sorting-text">Рейтинг:8,5</p>
+            <span class="sorting-text">Рейтинг:8,5</p>
           </li>
           <li class="results-item">
             <img src="img/desert.jpg" alt="Desert Quail Inn">
-            <h2 class="hotel-name">Desert Quail Inn</h2>
+            <a href="#" class="hotel-name">Desert Quail Inn</a>
             <p class="type">Мотель <span class="price">от 3000 Р.</span></p>
             <a href="#" class="more-info">Подробнее</a>
             <a href="#" class="booking">Забронировать</a>
-            <p class="sorting-text">Рейтинг:8,9</p>
+            <span class="sorting-text">Рейтинг:8,9</p>
           </li>
           <li class="results-item">
             <img src="img/villas.jpg" alt="Villas At Poco Diablo">
-            <h2 class="hotel-name">Villas At Poco Diablo</h2>
+            <a href="#" class="hotel-name">Villas At Poco Diablo</a>
             <p class="type">Апартаменты <span class="price">от 2000 Р.</span></p>
             <a href="#" class="more-info">Подробнее</a>
             <a href="#" class="booking">Забронировать</a>
-            <p class="sorting-text">Рейтинг:9,2</p>
+            <span class="sorting-text">Рейтинг:9,2</p>
           </li>
         </ul>
       </section>
