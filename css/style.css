@@ -15,7 +15,6 @@ a {
 
 .main-navigation {
   font-weight: 700;
-  color: #000000;
   background-color: #ffffff;
 }
 
@@ -25,6 +24,18 @@ a {
 
 .site-navigation a {
   color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #766357;
+}
+
+.site-navigation a:active {
+  color: #b2b2b2;
 }
 
 .banner {
@@ -56,7 +67,6 @@ a {
 
 .reason-blue h2 {
   font-size: 21px;
-  line-height: 21px;
   color: #ffffff;
   text-align: center;
   font-weight: 700;
@@ -70,7 +80,6 @@ a {
 .features-list h2 {
   text-align: center;
   font-size: 21px;
-  line-height: 21px;
   color: #000000;
 }
 
@@ -85,7 +94,6 @@ a {
 .reason-grey h2 {
   text-align: center;
   font-size: 21px;
-  line-height: 21px;
   color: #000000;
 }
 
@@ -173,18 +181,11 @@ a {
 
 .button-find:hover {
   background-color: #669ec0;
-  border:none;
-  font-size: 21px;
-  color: #ffffff;
-  font-weight: 700;
 }
 
 .button-find:active {
   background-color: #5496bd;
-  border:none;
-  font-size: 21px;
   color: #88b6d1;
-  font-weight: 700;
 }
 
 .footer-cotacts {
@@ -202,7 +203,6 @@ a {
 }
 
 .copyright{
-  font-size: 14px;
   line-height: 26px;
 }
 
@@ -216,7 +216,6 @@ a {
 .option {
   font-size: 16px;
   font-weight: 700;
-  line-height: 21px;
   color: #ffffff;
 }
 
@@ -273,23 +272,16 @@ a {
 }
 
 .sorting-item a:hover {
-  font-size:12px;
-  line-height: 18px;
   color:#81b3d2;
-  border-bottom:#81b3d2 1px dotted;
-}
-
-.sorting-item a:active {
-  font-size:12px;
-  line-height: 18px;
-  color:#000000;
-  border-bottom:transparent;
 }
 
 .sorting-item a:focus {
-  font-size:12px;
-  line-height: 18px;
   color:#81b3d2;
+  border-bottom:transparent;
+}
+
+.sorting-item a:active {
+  color:#000000;
   border-bottom:transparent;
 }
 
@@ -305,76 +297,44 @@ a {
 }
 
 .hotel-name:hover {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
   color:#81b3d2;
 }
 
 .hotel-name:active {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
   color:#b2b2b2;
 }
 
-.type {
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
-
 .more-info {
-  font-size: 14px;
-  line-height: 21px;
   color: #ffffff;
   font-weight: 700;
   background-color: #81b3d2;
 }
 
 .more-info:hover {
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  font-weight: 700;
   background-color: #669ec0;
 }
 
 .more-info:active {
-  font-size: 14px;
-  line-height: 21px;
   color: #84b4d0;
-  font-weight: 700;
   background-color: #5496bd;
 }
 
 .booking {
-  font-size: 14px;
-  line-height: 21px;
   color: #ffffff;
   font-weight: 700;
   background-color: #766357;
 }
 
 .booking:hover {
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  font-weight: 700;
   background-color: #604e43;
 }
 
 .booking:active {
-  font-size: 14px;
-  line-height: 21px;
   color: #857871;
-  font-weight: 700;
   background-color: #503e33;
 }
 
 .sorting-text {
-  font-size: 14px;
-  line-height: 21px;
   color: #666666;
   background-color: #f2f2f2;
 }
