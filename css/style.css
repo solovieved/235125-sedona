@@ -717,9 +717,151 @@ a.current:active{
   background-color: #fefefe;
 }
 
+.filter-input {
+  display: none;
+}
+
+.checkbox-style {
+  position: relative;
+  width: 27px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox-style,
+.filter-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filter-input:checked + .checkbox-style::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+.filter-text {
+  padding-left: 10px;
+}
+
+.filter-price {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+}
+
+.filter-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.filter-price label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.filter-price .min-price,
+.filter-price .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.filter-price input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.filter-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.filter-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.filter-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.filter-toggle:hover {
+  background: #1c4f80;
+}
+
+.filter-toggle-min {
+  left: 0;
+}
+
+.filter-toggle-max {
+  left: 80%;
+}
+
+.button-show {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 .found-item {
   padding-top: 30px;
   margin-right: 48px;
+}
+
+.sorting-list {
+  display: flex;
+}
+
+.sorting-item {
+  display: flex;
 }
 
 .results-list{
