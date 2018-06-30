@@ -21,6 +21,7 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
   min-width: 1200px;
+  position: relative;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -578,7 +579,7 @@ a.current:active{
 }
 
 .hotels {
-  min-height: 291px;
+  min-height: 762px;
   background-color: #ffffff;
 }
 
@@ -603,11 +604,14 @@ a.current:active{
 }
 
 .search-box {
+  position: absolute;
   width: 568px;
   height: 395px;
   background-color: #ffffff;
   margin: 0;
-  margin-left: 316px;
+  left: calc(50% - 284px);
+  -webkit-box-shadow: 7px 0 5px -5px #dbdbdb, 0 7px 5px -5px #dbdbdb, -7px 0 5px -5px #dbdbdb;
+          box-shadow: 7px 0 5px -5px #dbdbdb, 0 7px 5px -5px #dbdbdb, -7px 0 5px -5px #dbdbdb;
 }
 
 .arrival {
@@ -794,12 +798,39 @@ a.current:active{
   text-transform: uppercase;
 }
 
+.map {
+  position: relative;
+  min-height: 593px;
+  background-color: #f2f2f2;
+}
+
+.map .map-image {
+  position: absolute;
+  display: block;
+  width: 1200px;
+  height: 593px;
+}
+
+.search-box {
+  z-index: 1;
+}
+
 .main-footer .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 120px;
   background-color: #fefefe;
+}
+
+.main-footer-index {
+  top: calc(100% - 120px);
+  position: absolute;
+}
+
+.main-footer-index .footer-container-index {
+  position: absolute;
+  opacity: 0.9;
 }
 
 .footer-cotacts{
@@ -850,7 +881,7 @@ a.current:active{
 }
 
 .social-button:active,
-.social-button path:active {
+.social-button:active path {
   background-color: #5496bd;
   fill: #88b6d1;
 }
@@ -886,17 +917,19 @@ a.current:active{
   margin-top: 4px;
 }
 
-.logo-html path:hover {
+.logo-html:hover path {
   fill: #81b3d2;
 }
 
-.logo-html path:active {
+.logo-html:active path {
   fill: #bdbbbc;
 }
 
 .container-hotels {
   width: 1200px;
   margin: 0px auto;
+  -webkit-box-shadow: 7px 0 10px #dbdbdb,  -7px 0 10px #dbdbdb;
+          box-shadow: 7px 0 10px #dbdbdb,  -7px 0 10px #dbdbdb;
 }
 
 .fil {
@@ -927,7 +960,6 @@ a.current:active{
   margin-left: auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-
 }
 
 .filter-item ul {
@@ -1021,7 +1053,7 @@ a.current:active{
 .filter-price label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -1051,7 +1083,6 @@ a.current:active{
 
 .filter-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
@@ -1080,7 +1111,9 @@ a.current:active{
 }
 
 .filter-toggle:hover {
-  background: #1c4f80;
+  border: 10px solid #ffffff;
+  top: -11px;
+
 }
 
 .filter-toggle-min {
@@ -1160,17 +1193,17 @@ a.current:active{
   fill: #cacaca;
 }
 
-.arrow path:hover {
+.arrow:hover path {
   fill: #231f20;
 }
 
-.arrow path:active {
+.arrow:active path {
   fill: #81b3d2;
 }
 
 .current path,
-.arrow path:hover
-.arrow path:active {
+.current:hover path,
+.current:active path {
   fill: #81b3d2;
 }
 
@@ -1219,8 +1252,7 @@ a.current:active{
 }
 
 .more-info,
-.booking,
-.sorting-text {
+.booking {
   padding-left: 17px;
   padding-right: 17px;
   padding-top: 4px;
@@ -1237,12 +1269,19 @@ a.current:active{
 }
 
 .star-box {
-  margin-left: 25px;
+  display: inline-block;
+  text-align: right;
+  width: 120px;
 }
 
 .sorting-box {
-  margin-top: 44px;
-  margin-left: 2px;
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  margin-left: 9px;
+  padding-top: 3px;
+  padding-left: 16px;
 }
 
 .star {
