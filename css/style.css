@@ -1336,3 +1336,38 @@ a.current:active{
   display: flex;
   width: 114px;
 }
+
+/*script*/
+
+.hide {
+  animation: searchhide 1s forwards;
+}
+
+.show {
+  animation: searchshow 1s forwards;
+}
+
+@keyframes searchhide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50%);
+    opacity: 0
+  }
+}
+
+@keyframes searchshow {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
