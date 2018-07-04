@@ -1,5 +1,8 @@
 var open = document.querySelector(".search-button");
 var searchbox =  document.querySelector(".search-box");
+var form = document.querySelector("form");
+var datearr = document.querySelector("[name=date-arr]");
+var datedep = document.querySelector("[name=date-dep]");
 
 if (searchbox) {
   searchbox.classList.add("hide");
@@ -8,6 +11,13 @@ if (searchbox) {
   evt.preventDefault();
   searchbox.classList.toggle("hide");
   searchbox.classList.toggle("show");
+});
+
+form.addEventListener("submit", function (evt) {
+  if (!datearr.value || !datedep.value) {
+      evt.preventDefault();
+      console.log("Нужно ввести логин и пароль");
+    }
 });
 
 function init_map(){
