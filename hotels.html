@@ -18,7 +18,7 @@
             <li class="nav-right"><a class="active" href="hotels.html">Гостиницы</a></li>
           </ul>
           <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="Логотип sedona">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип sedona">
           </a>
         </nav>
       </header>
@@ -27,61 +27,39 @@
           <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
           <form action="https://echo.htmlacademy.ru" class="infrastructure" method="post">
             <div class="fil">
-              <div class="filter-item">
-                <fieldset>
-                  <legend class="option">Инфраструктура:</legend>
-                  <ul class="option-filter">
-                    <li class="option-filter-item">
-                      <input class="filter-input visually-hidden" type="checkbox" name="pool" id="pool" checked>
-                      <label class="filter-label" for="pool">Бассейн</label>
-                    </li>
-                    <li class="option-filter-item check2">
-                      <input class="filter-input visually-hidden" type="checkbox" name="parking" id="parking">
-                      <label class="filter-label" for="parking">Парковка</label>
-                    </li>
-                    <li class="option-filter-item">
-                      <input class="filter-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-                      <label class="filter-label" for="wi-fi">WI-FI</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="filter-item">
-                <fieldset>
-                  <legend class="option">Тип жилья:</legend>
-                  <ul class="option-filter">
-                    <li class="option-filter-item">
-                      <input class="filter-input visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
-                      <label class="filter-label" for="hotel">Гостиница</label>
-                    </li>
-                    <li class="option-filter-item check2">
-                      <input class="filter-input visually-hidden" type="checkbox" name="motel" id="motel" checked>
-                      <label class="filter-label" for="motel">Мотель</label>
-                    </li>
-                    <li class="option-filter-item">
-                      <input class="filter-input visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
-                      <label class="filter-label" for="apartments">Апартаменты</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="filter-item right">
-                <fieldset>
-                  <legend class="option">Стоимость в сутки (Р):</legend>
-                  <div class="filter-price">
-                    <label class="min-price">от <input class="trans" type="text" name="min-price" value="0"></label>
-                    <label class="max-price">до <input class="trans" type="text" name="max-price" value="3000"></label>
+              <fieldset class="filter-item">
+                <legend class="option">Инфраструктура:</legend>
+                <input class="filter-input visually-hidden" type="checkbox" name="pool" id="pool" checked>
+                <label class="filter-label" for="pool">Бассейн</label>
+                <input class="filter-input visually-hidden" type="checkbox" name="parking" id="parking">
+                <label class="filter-label" for="parking">Парковка</label>
+                <input class="filter-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                <label class="filter-label" for="wi-fi">WI-FI</label>
+              </fieldset>
+              <fieldset class="filter-item">
+                <legend class="option">Тип жилья:</legend>
+                <input class="filter-input visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+                <label class="filter-label" for="hotel">Гостиница</label>
+                <input class="filter-input visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                <label class="filter-label" for="motel">Мотель</label>
+                <input class="filter-input visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
+                <label class="filter-label" for="apartments">Апартаменты</label>
+              </fieldset>
+              <fieldset class="filter-item right">
+                <legend class="option">Стоимость в сутки (Р):</legend>
+                <div class="filter-price">
+                  <label class="min-price">от <input class="trans" type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input class="trans" type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="filter-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <div class="filter-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="filter-toggle filter-toggle-min"></div>
-                    <div class="filter-toggle filter-toggle-max"></div>
-                  </div>
-                </fieldset>
+                  <div class="filter-toggle filter-toggle-min"></div>
+                  <div class="filter-toggle filter-toggle-max"></div>
+                </div>
                 <button class="button-show" type="submit">Показать</button>
-              </div>
+              </fieldset>
             </div>
           </form>
         </section>
@@ -108,7 +86,7 @@
           <ul class="results-list">
             <li class="results-item">
               <div class="results-item-image">
-                <img src="img/amara.jpg" alt="Amara Resort & SPA">
+                <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & SPA">
               </div>
               <div class="results-item-info">
                 <h2><a href="#" class="hotel-name">Amara Resort & SPA</a></h2>
@@ -128,7 +106,7 @@
             </li>
             <li class="results-item">
               <div class="results-item-image">
-                <img src="img/desert.jpg" alt="Desert Quail Inn">
+                <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
               </div>
               <div class="results-item-info">
                 <h2><a href="#" class="hotel-name">Desert Quail Inn</a></h2>
@@ -147,7 +125,7 @@
             </li>
             <li class="results-item">
               <div class="results-item-image">
-                <img src="img/villas.jpg" alt="Villas At Poco Diablo">
+                <img src="img/villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
               </div>
               <div class="results-item-info">
                 <h2><a href="#" class="hotel-name">Villas At Poco Diablo</a></h2>

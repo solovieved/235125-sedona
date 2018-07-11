@@ -86,7 +86,13 @@ a.active:active {
 }
 
 .reason-blue {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #81b3d2;
+}
+
+.reason-item {
+  z-index: 1;
 }
 
 .reason-blue h2 {
@@ -101,18 +107,23 @@ a.active:active {
   color: #ffffff;
 }
 
-.features-list h2 {
+.features-item h2 {
   text-align: center;
   font-size: 21px;
   color: #000000;
 }
 
-.features-list p {
-  text-align: center;
+.features-item p {
+  color: #000000;
+}
+
+.features-item {
+  z-index: 1;
 }
 
 .reason-grey {
   background-color: #eeeeee;
+  z-index: 1;
 }
 
 .reason-grey h2 {
@@ -123,6 +134,7 @@ a.active:active {
 
 .reason-grey p {
   text-align: center;
+  color: #000000;
 }
 
 .hotels-title{
@@ -439,11 +451,13 @@ a.current:active{
 }
 
 .banner-image img{
+  position: absolute;
   display: block;
   width: 458px;
   min-height: 352px;
   margin: 0 auto;
-  padding-top: 77px;
+  top: 77px;
+  left: calc(50% - 229px);
 }
 
 .intro {
@@ -559,18 +573,6 @@ a.current:active{
 .features-item h2 {
   margin-top: 23px;
   margin-bottom: 24px;
-}
-
-.reason-grey {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 256px;
-  margin: 0;
-  padding: 0;
 }
 
 .reason-grey p {
@@ -937,43 +939,21 @@ a.current:active{
   min-height: 217px;
 }
 
-.filter-item fieldset {
+.filter-item {
   padding-left:0;
   margin-top: 30px;
   border: 0;
   padding: 0;
   margin: 0;
-}
-
-.filter-item{
   width: 255px;
   margin-top: 27px;
 }
-
 
 .right {
   width: 318px;
   margin-left: auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-}
-
-.filter-item ul {
-  padding: 0;
-  margin: 0;
-}
-
-.option-filter-item {
-  padding-top: 24px;
-  color: #ffffff;
-}
-
-.check2 {
-  padding-top: 23px;
-}
-
-.check2+.option-filter-item {
-  padding-top: 22px;
 }
 
 .found {
@@ -988,12 +968,11 @@ a.current:active{
 }
 
 .filter-label {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   position: relative;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 40px;
+  margin-top: 24px;
+  margin-left: 40px;
+  color: #ffffff;
 }
 
 .filter-label::before {
@@ -1005,6 +984,7 @@ a.current:active{
   width: 23px;
   height: 23px;
   background: url(../img/checkbox-off.svg) no-repeat top left;
+  margin-left: -40px;
 }
 
 .filter-input:checked + .filter-label::before {
@@ -1254,6 +1234,7 @@ a.current:active{
 
 .price {
   display: inline-block;
+  vertical-align: middle;
   width: 117px;
 }
 
@@ -1263,6 +1244,7 @@ a.current:active{
 
 .star-box {
   display: inline-block;
+  vertical-align: middle;
   text-align: right;
   width: 120px;
 }
